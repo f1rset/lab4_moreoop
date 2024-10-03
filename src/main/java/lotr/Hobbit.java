@@ -8,7 +8,7 @@ public class Hobbit extends Character{
 
     @Override
     public void kick(Character c) {
-        System.out.println("Hobbit doesn't fight. They try to avoid conflicts.");
+        toCry();
     }
 
     @Override
@@ -19,5 +19,9 @@ public class Hobbit extends Character{
     @Override
     public void setHp(int hp){
         super.setHp(Math.max(hp, 0));
+    }
+
+    private void toCry(){
+        System.out.println("\u001B[34m" + "Hobbit cries(((" + "\u001B[0m");
     }
 }

@@ -16,4 +16,10 @@ public class Knight extends Character{
 	public void kick(Character c) {
 		c.setHp(c.getHp() - random(0, getPower()));
 	}
+
+    @Override
+    public String toString(){
+        return "Knight{hp=" + getHp() + ", power=" + getPower() + "}";
+
+    }
 }

@@ -18,5 +18,8 @@ public class King extends Character{
         return rnd.nextInt((max - min) + 1) + min;
     }
 
-    
+    @Override
+    public String toString(){
+        return "King{hp=" + getHp() + ", power=" + getPower() + "}";
+    }
 }
