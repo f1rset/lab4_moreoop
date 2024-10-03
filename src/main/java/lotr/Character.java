@@ -13,4 +13,9 @@ public abstract class Character {
     public boolean isAlive(){
         return hp > 0;
     }
+
+    @Override
+    public String toString(){
+        return this.getClass().getSimpleName() +"{hp=" + getHp() + ", power=" + getPower() + "}";
+    }
 }

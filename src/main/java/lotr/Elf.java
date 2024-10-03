@@ -18,11 +18,4 @@ public class Elf extends Character {
             }
         }
     }
-
-    @Override
-    public String toString() {
-        return "Elf{hp=" + getHp()
-                + ", power=" +
-                getPower() + "}";
-    }
 }

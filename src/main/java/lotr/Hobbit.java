@@ -12,11 +12,6 @@ public class Hobbit extends Character{
     }
 
     @Override
-    public String toString() {
-        return "Hobbit{hp=" + getHp() + ", power=" + getPower() + "}";
-    }
-
-    @Override
     public void setHp(int hp){
         super.setHp(Math.max(hp, 0));
     }
